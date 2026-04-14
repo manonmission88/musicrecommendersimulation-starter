@@ -52,6 +52,68 @@ flowchart TD
     J --> K[Top K recommendations]
 ```
 
+### Evaluation Runs
+
+#### High-Energy Pop
+
+
+```text
+Title: Sunrise City
+Artist: Neon Echo
+Score: 5.36
+Reasons: genre match (+1.0); mood match (+1.0); energy closeness (+3.36)
+
+Title: Gym Hero
+Artist: Max Pulse
+Score: 4.76
+Reasons: genre match (+1.0); energy closeness (+3.76)
+
+Title: Storm Runner
+Artist: Voltline
+Score: 3.92
+Reasons: energy closeness (+3.92)
+```
+
+#### Chill Lofi
+
+
+```text
+Title: Midnight Coding
+Artist: LoRoom
+Score: 6.34
+Reasons: genre match (+1.0); mood match (+1.0); energy closeness (+3.84); acousticness match (+0.5)
+
+Title: Library Rain
+Artist: Paper Lanterns
+Score: 6.10
+Reasons: genre match (+1.0); mood match (+1.0); energy closeness (+3.60); acousticness match (+0.5)
+
+Title: Focus Flow
+Artist: LoRoom
+Score: 5.50
+Reasons: genre match (+1.0); energy closeness (+4.00); acousticness match (+0.5)
+```
+
+#### Deep Intense Rock
+
+
+```text
+Title: Storm Runner
+Artist: Voltline
+Score: 6.18
+Reasons: genre match (+1.0); mood match (+1.0); energy closeness (+3.68); low acousticness match (+0.5)
+
+Title: Gym Hero
+Artist: Max Pulse
+Score: 5.34
+Reasons: mood match (+1.0); energy closeness (+3.84); low acousticness match (+0.5)
+
+Title: Sunrise City
+Artist: Neon Echo
+Score: 3.46
+Reasons: energy closeness (+2.96); low acousticness match (+0.5)
+```
+
 ---
 
 ## Getting Started

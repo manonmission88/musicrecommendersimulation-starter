@@ -112,8 +112,8 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     reasons: List[str] = []
 
     if user_prefs.get("genre") and song.get("genre") == user_prefs.get("genre"):
-        score += 2.0
-        reasons.append("genre match (+2.0)")
+        score += 1.0
+        reasons.append("genre match (+1.0)")
 
     if user_prefs.get("mood") and song.get("mood") == user_prefs.get("mood"):
         score += 1.0
@@ -123,7 +123,7 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     song_energy = song.get("energy")
     if target_energy is not None and song_energy is not None:
         energy_gap = abs(float(target_energy) - float(song_energy))
-        energy_score = max(0.0, 2.0 - energy_gap * 4.0)
+        energy_score = max(0.0, 4.0 - energy_gap * 8.0)
         score += energy_score
         reasons.append(f"energy closeness (+{energy_score:.2f})")
 
